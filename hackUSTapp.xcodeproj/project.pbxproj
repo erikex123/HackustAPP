@@ -14,6 +14,9 @@
 		F0EC2C541EAB46F200956C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EC2C521EAB46F200956C36 /* LaunchScreen.storyboard */; };
 		F0EC2C5F1EAB46F200956C36 /* hackUSTappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC2C5E1EAB46F200956C36 /* hackUSTappTests.swift */; };
 		F0EC2C6A1EAB46F200956C36 /* hackUSTappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC2C691EAB46F200956C36 /* hackUSTappUITests.swift */; };
+		F0EC2C781EAB4BC400956C36 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC2C771EAB4BC400956C36 /* LocationService.swift */; };
+		F0EC2C7A1EAB99C600956C36 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC2C791EAB99C600956C36 /* FirstViewController.swift */; };
+		F0EC2C7C1EABBE3B00956C36 /* SmallerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC2C7B1EABBE3B00956C36 /* SmallerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F0EC2C651EAB46F200956C36 /* hackUSTappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hackUSTappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EC2C691EAB46F200956C36 /* hackUSTappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUSTappUITests.swift; sourceTree = "<group>"; };
 		F0EC2C6B1EAB46F200956C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EC2C771EAB4BC400956C36 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F0EC2C791EAB99C600956C36 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F0EC2C7B1EABBE3B00956C36 /* SmallerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				F0EC2C491EAB46F200956C36 /* AppDelegate.swift */,
 				F0EC2C4B1EAB46F200956C36 /* ViewController.swift */,
+				F0EC2C771EAB4BC400956C36 /* LocationService.swift */,
 				F0EC2C4D1EAB46F200956C36 /* Main.storyboard */,
+				F0EC2C7B1EABBE3B00956C36 /* SmallerView.swift */,
+				F0EC2C791EAB99C600956C36 /* FirstViewController.swift */,
 				F0EC2C501EAB46F200956C36 /* Assets.xcassets */,
 				F0EC2C521EAB46F200956C36 /* LaunchScreen.storyboard */,
 				F0EC2C551EAB46F200956C36 /* Info.plist */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					F0EC2C451EAB46F200956C36 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X2MJM78ES8;
 						ProvisioningStyle = Automatic;
 					};
 					F0EC2C591EAB46F200956C36 = {
@@ -259,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EC2C7C1EABBE3B00956C36 /* SmallerView.swift in Sources */,
 				F0EC2C4C1EAB46F200956C36 /* ViewController.swift in Sources */,
+				F0EC2C781EAB4BC400956C36 /* LocationService.swift in Sources */,
 				F0EC2C4A1EAB46F200956C36 /* AppDelegate.swift in Sources */,
+				F0EC2C7A1EAB99C600956C36 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X2MJM78ES8;
 				INFOPLIST_FILE = hackUSTapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.hackUSTapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,11 +442,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X2MJM78ES8;
 				INFOPLIST_FILE = hackUSTapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.hackUSTapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
